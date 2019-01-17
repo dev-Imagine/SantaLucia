@@ -13,6 +13,7 @@ namespace SantaLucia.Controllers
             ViewBag.DatosIncorrectos = DatosIncorrectos;
             return View();
         }
+
         [HttpPost, ValidateAntiForgeryToken]
         public ActionResult Ingresar(string dni, string contraseña)
         {
